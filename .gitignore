@@ -57,3 +57,15 @@ Desktop.ini
 # Next.js
 .next/
 out/
+
+# Large binary files and installers
+*.exe
+*.msi
+*.dmg
+*.pkg
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+*installer*
+Technology Stack/*/
