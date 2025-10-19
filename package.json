@@ -1,0 +1,30 @@
+{
+  "name": "ridesharing-app",
+  "version": "1.0.0",
+  "description": "Complete ridesharing application with web and mobile frontends",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run backend:dev",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend/web && npm start",
+    "mobile:ios": "cd frontend/mobile && npm run ios",
+    "mobile:android": "cd frontend/mobile && npm run android",
+    "test": "npm run backend:test && npm run frontend:test",
+    "backend:test": "cd backend && npm test",
+    "frontend:test": "cd frontend/web && npm test",
+    "build": "npm run backend:build && npm run frontend:build",
+    "backend:build": "cd backend && npm run build",
+    "frontend:build": "cd frontend/web && npm run build",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": ["ridesharing", "express", "react", "react-native", "postgresql", "redis"],
+  "author": "Ridesharing Team",
+  "license": "MIT",
+  "workspaces": [
+    "backend",
+    "frontend/web",
+    "frontend/mobile"
+  ]
+}

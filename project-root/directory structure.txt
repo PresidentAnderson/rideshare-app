@@ -1,0 +1,171 @@
+project-root/
+├── docs/
+│   ├── architecture-diagrams/
+│   │   ├── system-overview.png
+│   │   ├── database-schema.png
+│   │   └── deployment-diagram.png
+│   ├── api-specs/
+│   │   ├── openapi.yaml (or openapi.json)
+│   │   └── README.md
+│   ├── requirements/
+│   │   ├── functional-spec.md
+│   │   └── business-model.md
+│   ├── wireframes/
+│   │   ├── homepage-wireframe.png
+│   │   ├── rider-portal-wireframe.png
+│   │   ├── driver-portal-wireframe.png
+│   │   └── mobile-app-wireframe.png
+│   ├── branding/
+│   │   ├── logo.png
+│   │   └── color-palette.md
+│   └── README.md
+│
+├── backend/
+│   ├── src/
+│   │   ├── app.js                (Express.js entry point)
+│   │   ├── routes/
+│   │   │   ├── auth.routes.js
+│   │   │   ├── rides.routes.js
+│   │   │   ├── messaging.routes.js
+│   │   │   ├── payment.routes.js
+│   │   │   └── admin.routes.js
+│   │   ├── controllers/
+│   │   │   ├── auth.controller.js
+│   │   │   ├── rides.controller.js
+│   │   │   ├── messaging.controller.js
+│   │   │   ├── payment.controller.js
+│   │   │   └── admin.controller.js
+│   │   ├── models/
+│   │   │   ├── user.model.js
+│   │   │   ├── ride.model.js
+│   │   │   ├── payment.model.js
+│   │   │   ├── message.model.js
+│   │   │   └── index.js
+│   │   ├── services/
+│   │   │   ├── auth.service.js
+│   │   │   ├── rides.service.js
+│   │   │   ├── payment.service.js
+│   │   │   ├── messaging.service.js
+│   │   │   ├── ai-validation.service.js
+│   │   │   └── notification.service.js
+│   │   ├── middlewares/
+│   │   │   ├── auth.middleware.js
+│   │   │   ├── error-handler.js
+│   │   │   └── request-logger.js
+│   │   ├── utils/
+│   │   │   ├── jwt.js
+│   │   │   ├── env.js
+│   │   │   └── validators.js
+│   │   ├── config/
+│   │   │   ├── db.js
+│   │   │   ├── redis.js
+│   │   │   └── payment.config.js
+│   │   └── index.js
+│   │
+│   ├── migrations/
+│   │   ├── 001-create-users-table.js
+│   │   ├── 002-create-rides-table.js
+│   │   ├── 003-create-payments-table.js
+│   │   ├── 004-create-messages-table.js
+│   │   └── ...
+│   ├── tests/
+│   │   ├── unit/
+│   │   │   ├── auth.test.js
+│   │   │   ├── rides.test.js
+│   │   │   └── payment.test.js
+│   │   ├── integration/
+│   │   │   ├── api.test.js
+│   │   │   └── messaging.test.js
+│   │   └── jest.config.js
+│   ├── package.json
+│   └── README.md
+│
+├── frontend/
+│   ├── web/
+│   │   ├── src/
+│   │   │   ├── index.js
+│   │   │   ├── App.js
+│   │   │   ├── components/
+│   │   │   │   ├── RiderDashboard/
+│   │   │   │   ├── DriverDashboard/
+│   │   │   │   ├── Messaging/
+│   │   │   │   └── Payment/
+│   │   │   ├── pages/
+│   │   │   │   ├── HomePage.js
+│   │   │   │   ├── SearchRidesPage.js
+│   │   │   │   ├── ProfilePage.js
+│   │   │   │   └── AdminPortal.js
+│   │   │   ├── hooks/
+│   │   │   ├── utils/
+│   │   │   └── styles/
+│   │   ├── public/
+│   │   │   ├── index.html
+│   │   │   └── favicon.ico
+│   │   ├── tests/
+│   │   │   ├── unit/
+│   │   │   ├── integration/
+│   │   │   └── cypress/
+│   │   ├── package.json
+│   │   └── README.md
+│   │
+│   ├── mobile/
+│   │   ├── src/
+│   │   │   ├── App.js
+│   │   │   ├── components/
+│   │   │   ├── screens/
+│   │   │   ├── hooks/
+│   │   │   ├── utils/
+│   │   │   └── assets/
+│   │   ├── android/
+│   │   ├── ios/
+│   │   ├── tests/
+│   │   │   ├── unit/
+│   │   │   └── integration/
+│   │   ├── package.json
+│   │   └── README.md
+│
+│   └── README.md
+│
+├── infrastructure/
+│   ├── docker/
+│   │   ├── Dockerfile.backend
+│   │   ├── Dockerfile.frontend
+│   │   ├── docker-compose.yml
+│   │   └── README.md
+│   ├── kubernetes/
+│   │   ├── deployments/
+│   │   │   ├── backend-deployment.yaml
+│   │   │   ├── frontend-deployment.yaml
+│   │   │   └── mobile-deployment.yaml
+│   │   ├── services/
+│   │   │   ├── backend-service.yaml
+│   │   │   ├── frontend-service.yaml
+│   │   │   └── mobile-service.yaml
+│   │   └── README.md
+│   ├── ci-cd/
+│   │   ├── github-actions/
+│   │   │   ├── build-and-test.yml
+│   │   │   └── deploy.yml
+│   │   └── README.md
+│   ├── scripts/
+│   │   ├── init-db.sh
+│   │   ├── migrate.sh
+│   │   ├── seed-data.sh
+│   │   └── backup-db.sh
+│   └── README.md
+│
+├── config/
+│   ├── default.env
+│   ├── development.env
+│   ├── staging.env
+│   └── production.env
+│
+├── scripts/
+│   ├── local-setup.sh
+│   ├── run-tests.sh
+│   └── deploy.sh
+│
+├── .env (for local dev, do not commit to repo)
+├── .gitignore
+├── LICENSE
+└── README.md
