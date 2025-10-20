@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🐛 Bug Report
+    url: https://github.com/PresidentAnderson/rideshare-app/issues/new?template=bug_report.md
+    about: Report a bug in the application
+  - name: ✨ Feature Request
+    url: https://github.com/PresidentAnderson/rideshare-app/issues/new?template=feature_request.md
+    about: Suggest a new feature
+  - name: 📚 Documentation
+    url: https://github.com/PresidentAnderson/rideshare-app/blob/main/README.md
+    about: Check our documentation first
+  - name: 🚀 Deployment Status
+    url: https://rideshare-oocmfydnq-axaiinovation.vercel.app
+    about: Check the live application
